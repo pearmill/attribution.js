@@ -1,17 +1,11 @@
-/* global __dirname, require, module*/
-
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
-const libraryName = 'attribution-js.min.js';
+const libraryName = 'attribution';
 
 let plugins = [];
 
-const config = {
-  mode: 'production',
-  entry: ['./index.js'],
-  output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: libraryName
-  },
+const baseConfig = {
+  entry: ['./attribution.js'],
   module: {
     rules: [
       {
@@ -24,18 +18,45 @@ const config = {
   resolve: {
     extensions: ['.js']
   },
-  devServer:{
-    port: 3000,
-    contentBase: __dirname + '/build',
-    inline: true
+  plugins: plugins
+}
+
+const output = {
+  ...baseConfig,
+  mode: 'development',
+  devtool: false,
+  output: {
+    pathinfo: false,
+    path: path.resolve(__dirname),
+    filename: `${libraryName}.js`
+  }
+}
+
+const minified = {
+  ...baseConfig,
+  mode: 'production',
+  output: {
+    path: path.resolve(__dirname),
+    filename: `${libraryName}.min.js`
   },
-  plugins: plugins,
   optimization: {
     minimize: true,
     removeEmptyChunks: true,
     mergeDuplicateChunks: true,
     providedExports: true,
-    usedExports: true
+    usedExports: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          output: {
+            comments: false,
+          },
+        },
+      }),
+    ]
   }
 }
-module.exports = config;
+
+module.exports = [
+  minified
+];

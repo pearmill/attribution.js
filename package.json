@@ -2,7 +2,7 @@
   "name": "attribution.js",
   "version": "0.0.1",
   "description": "A web attribution tracker using cookies/localStorage for performance marketing.",
-  "main": "index.js",
+  "main": "attribution.js",
   "repository": "https://github.com/pearmill/attribution.js",
   "author": "Nima Gardideh <nima@pearmill.com>",
   "license": "MIT",
