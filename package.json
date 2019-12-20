@@ -1,0 +1,25 @@
+{
+  "name": "attribution.js",
+  "version": "0.0.1",
+  "description": "A web attribution tracker using cookies/localStorage for performance marketing.",
+  "main": "index.js",
+  "repository": "https://github.com/pearmill/attribution.js",
+  "author": "Nima Gardideh <nima@pearmill.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "test": "jest",
+    "test-init": "jest --init"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "js-cookie": "^2.2.1"
+  }
+}
