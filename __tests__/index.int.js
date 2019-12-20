@@ -50,6 +50,20 @@ describe("module", () => {
       expect(visits.length).toEqual(2);
     });
 
+    it("save current page in param object correctly.", () => {
+      delete window.location
+      window.location = {
+        search: '?',
+        href: 'https://pearmill.com/'
+      }
+
+      const paramObject = attribution.save();
+
+      expect(paramObject).toBeTruthy();
+      expect(paramObject.page).toBeTruthy();
+      expect(paramObject.page).toEqual(window.location.href);
+    });
+
     it("saves query parameters in param object correctly.", () => {
       const params = { utm_campaign: 'test', utm_source: 'source' };
 
@@ -83,16 +97,6 @@ describe("module", () => {
       const timeObject = new Date(paramObject.time);
       expect(!isNaN(timeObject.getTime())).toBeTruthy();
     });
-  });
-
-  describe("lastClickParams", () => {
-    it("should return last visit params.", () => {
-      attribution.save();
-      attribution.save();
-      const paramObject = attribution.save();
-
-      expect(attribution.lastClickParams()).toEqual(paramObject);
-    })
   });
 
   describe("firstClickParams", () => {
