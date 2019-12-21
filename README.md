@@ -19,7 +19,7 @@ If you have a single-page web-app, you can use the package:
 ```bash
 npm install @pearmill/attribution.js
 
-// Or if you're using Yarn
+# Or if you're using Yarn
 yarn add @pearmill/attribution.js
 ```
 
