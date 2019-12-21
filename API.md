@@ -182,7 +182,7 @@ Function returns an array of all tracked visits' parameters objects.
       "_ga": "...",
       "_gid": "..."
     },
-    "page": "https://www.npmjs.com/package/@pearmill/attribution.js?utm_campaign=hello",
+    "page": "https://pearmill.com?utm_campaign=hello",
     "referrer": "https://google.com"
   },
   {
@@ -194,7 +194,7 @@ Function returns an array of all tracked visits' parameters objects.
       "_ga": "...",
       "_gid": "..."
     },
-    "page": "https://www.npmjs.com/package/@pearmill/attribution.js?utm_campaign=test",
+    "page": "https://pearmill.com?utm_campaign=test",
     "referrer": ""
   }
 ]
