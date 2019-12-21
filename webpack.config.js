@@ -5,7 +5,7 @@ const libraryName = 'attribution';
 let plugins = [];
 
 const baseConfig = {
-  entry: ['./attribution.js'],
+  entry: [`${libraryName}.js`],
   module: {
     rules: [
       {

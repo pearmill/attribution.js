@@ -1,6 +1,6 @@
 {
   "name": "@pearmill/attribution.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A localized tracking script to attribute marketing channels.",
   "main": "attribution.js",
   "repository": "https://github.com/pearmill/attribution.js",
