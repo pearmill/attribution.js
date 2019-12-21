@@ -17,10 +17,10 @@ The easiest way to get started is to embed the script onto every page of your we
 If you have a single-page web-app, you can use the package:
 
 ```bash
-npm install attribution.js
+npm install @pearmill/attribution.js
 
 // Or if you're using Yarn
-yarn add attribution.js
+yarn add @pearmill/attribution.js
 ```
 
 ## Embed
@@ -33,13 +33,13 @@ Alternatively, you can embed the script by copy pasting the code below:
 attribution.save();
 ```
 
-This automatically calls the [attribution.save](https://github.com/pearmill/atttribution.js/blob/master/API.md#save) function (in the last line). If you're modifying the settings, call the [attribution.settings](https://github.com/pearmill/atttribution.js/blob/master/API.md#settings) function before the [attribution.save](https://github.com/pearmill/atttribution.js/blob/master/API.md#save) call.
+This automatically calls the [attribution.save()](https://github.com/pearmill/atttribution.js/blob/master/API.md#save) function (in the last line). If you're modifying the settings, call the [attribution.settings()](https://github.com/pearmill/atttribution.js/blob/master/API.md#settings) function before the [attribution.save()](https://github.com/pearmill/atttribution.js/blob/master/API.md#save) call.
 
 ## Usage
 
 In order to actually tack a visit, you are to call [attribution.save()](https://github.com/pearmill/atttribution.js/blob/master/API.md#save) function.
 
-You can control the parameters the module saves, and how it tracks visits using the [attribution.settings](https://github.com/pearmill/atttribution.js/blob/master/API.md#settings) function.
+You can control the parameters the module saves, and how it tracks visits using the [attribution.settings()](https://github.com/pearmill/atttribution.js/blob/master/API.md#settings) function.
 
 ### Example
 
