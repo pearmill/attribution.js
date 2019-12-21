@@ -5,8 +5,8 @@ You can use this function to set or retrieve the current settings. If you change
 
 **Signature**
 ```javascript
-  // options – (optional) - settings attributes to set/change
-  attribution.settings(options = {});
+// options – (optional) - settings attributes to set/change
+attribution.settings(options = {});
 ```
 
 You can pass the following parameters as part of the `options` object:
@@ -64,13 +64,13 @@ Function returns the full settings object.
 
 **Usage**
 ```javascript
-  // Set settings
-  attribution.settings({
-    limitVisits: 10
-  });
+// Set settings
+attribution.settings({
+  limitVisits: 10
+});
 
-  // Get settings
-  attribution.settings();
+// Get settings
+attribution.settings();
 ```
 
 ## save
@@ -81,7 +81,7 @@ Each time it's called, a new visit is tracked.
 
 **Signature**
 ```javascript
-  attribution.save();
+attribution.save();
 ```
 
 **Returns**
@@ -109,7 +109,7 @@ Retrieve the current visit's parameters. Note: this function calls `save` for yo
 
 **Signature**
 ```javascript
-  attribution.params();
+attribution.params();
 ```
 
 **Returns**
@@ -137,7 +137,7 @@ Retrieve the first tracked visit's parameters.
 
 **Signature**
 ```javascript
-  attribution.firstClickParams();
+attribution.firstClickParams();
 ```
 
 **Returns**
@@ -146,9 +146,9 @@ Function returns first tracked visits parameters object.
 
 ```json
 {
-  "time": "Sat, 21 Dec 2019 10:42:08 GMT",
+  "time": "Sat, 21 Dec 2019 10:41:47 GMT",
   "query": {
-    "utm_campaign": "test"
+    "utm_campaign": "hello"
   },
   "cookies": {
     "_ga": "...",
@@ -165,7 +165,7 @@ Retrieve all historical tracked visits' parameters.
 
 **Signature**
 ```javascript
-  attribution.historicalParams();
+attribution.historicalParams();
 ```
 **Returns**
 
