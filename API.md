@@ -13,12 +13,12 @@ You can pass the following parameters as part of the `options` object:
 
 * `localStorageName` – string – localStorage key. Default: `_attrbjs`.
 * `limitVisits` – limit the number of tracked visits. It always keeps the first and last visits. Default: `5`.
-* trackQueryParameters – array – query parameters to keep track of. Default: `['utm_campaign', 'utm_medium', 'utm_source', 'utm_content', 'utm_term', 'ref', 'fbclid']`
-* trackCookies – array – cookies to keep track of. Default: `['_fbc', '_fbp', '_ga', '_gid', '__utma', '__utmb', '__utmc', '__utmz', '__utmv', '__utmx', '__utmxx', '_gaexp', '_opt_awcid', '_opt_awmid', '_opt_awgid', '_opt_awkid', '_opt_utmc']`
-* trackReferrer – boolean – whether or not to keep track of the referrer. Default: `true`
-* ignoreVisitsWithoutUTMParameters – boolean – whether or not to ignore visits that don't include a `utm_*` parameter. Default: `true`
-* visitFilterFunction – function – a function to block or allow tracking. Default: `null`
-* debug – boolean – whether or not to lock debug information. Default: `false`
+* `trackQueryParameters` – array – query parameters to keep track of. Default: `['utm_campaign', 'utm_medium', 'utm_source', 'utm_content', 'utm_term', 'ref', 'fbclid']`
+* `trackCookies` – array – cookies to keep track of. Default: `['_fbc', '_fbp', '_ga', '_gid', '__utma', '__utmb', '__utmc', '__utmz', '__utmv', '__utmx', '__utmxx', '_gaexp', '_opt_awcid', '_opt_awmid', '_opt_awgid', '_opt_awkid', '_opt_utmc']`
+* `trackReferrer` – boolean – whether or not to keep track of the referrer. Default: `true`
+* `ignoreVisitsWithoutUTMParameters` – boolean – whether or not to ignore visits that don't include a `utm_*` parameter. Default: `true`
+* `visitFilterFunction` – function – a function to block or allow tracking. Default: `null`
+* `debug` – boolean – whether or not to lock debug information. Default: `false`
 
 **Returns**
 
