@@ -2,7 +2,7 @@
 
 Attribution.js automatically collects and stores marketing channel data into localStorage, and makes it available via a simple to use API to be used in internal and external analytics tools.
 
-Attribution.js is open source and powers our attribution and lead scoring tools at [Pearmill](https://pearmill.com), a software-powered advertising growth studio.
+Attribution.js is open source and powers our attribution and lead scoring tools at [Pearmill](https://pearmill.com?utm_campaign=attribution-js&utm_source=open-source&utm_medium=github), a software-powered advertising growth studio.
 
 You can read [this short background story](https://github.com/pearmill/attribution.js/#background) about why we've developed this and what problem it solves.
 
@@ -62,7 +62,7 @@ If you've ever been part of a sophisticated performance marketing team, you'll k
 
 Plenty of analytics tools like Google Analytics, Mixpanel, and Amplitude have done a decent job at simplifying common attribution problems. However, this has lead to it being impossible to match data across multiple analytics tools to first-party channel data or internal data. They're either using black-box fingerprinting, or their attribution-models aren't able to be modified to the use-case of the team.
 
-At [Pearmill](https://pearmill.com) – we help companies grow through paid digital advertising (like Facebook, Google, etc.), and we'd like to be sure that the budget we're spending on each campaign, ad set, or singular ad has a positive return on investment.
+At [Pearmill](https://pearmill.com?utm_campaign=attribution-js&utm_source=open-source&utm_medium=github) – we help companies grow through paid digital advertising (like Facebook, Google, etc.), and we'd like to be sure that the budget we're spending on each campaign, ad set, or singular ad has a positive return on investment.
 
 In order to completely trust that we're doing a good job, we've written our own tools to ensure our ad-spend is efficient. As we grow, we've realized that we can't help every company with our services – so we've decided to open source some of our internal tooling in order to help teams become as sophisticated with their work as we are.
 
