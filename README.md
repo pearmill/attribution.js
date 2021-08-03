@@ -37,7 +37,7 @@ This automatically calls the [attribution.save()](https://github.com/pearmill/at
 
 ## Usage
 
-In order to actually tack a visit, you are to call [attribution.save()](https://github.com/pearmill/attribution.js/blob/master/API.md#save) function.
+In order to actually track a visit, you are to call [attribution.save()](https://github.com/pearmill/attribution.js/blob/master/API.md#save) function.
 
 You can control the parameters the module saves, and how it tracks visits using the [attribution.settings()](https://github.com/pearmill/attribution.js/blob/master/API.md#settings) function.
 
