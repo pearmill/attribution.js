@@ -8,6 +8,8 @@ You can read [this short background story](https://github.com/pearmill/attributi
 
 Specifically, this library, tracks all UTM parameters (`utm_campaign`, `utm_source`, etc.) as well as a few key cookies (`_fbp`, `_fbc` from Facebook, `_ga` from GA, etc.) and saves them to localStorage. You can then retrieve them and pass them along as part of user actions to your internal or external analytics tools.
 
+You can find a ![visualization of the codebase here](./diagram.svg).
+
 ## Getting started
 
 The easiest way to get started is to embed the script onto every page of your website, and retrieve the data when the user is making an action to retrieve the latest attribution data.
